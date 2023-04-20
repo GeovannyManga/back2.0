@@ -1,7 +1,7 @@
 //en este archivo se guardaran todas las variables de configuracion
 const config = {
     appConfig : {
-        port : 3000||process.env.APP_PORT
+        port : process.env.APP_PORT||3000
     },
 
     dbConfig : {

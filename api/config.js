@@ -6,9 +6,9 @@ const config = {
 
     dbConfig : {
         uri : process.env.URI,
-        host : process.env.DB_HOST||"https://back20-production.up.railway.app/",
+        host : process.env.DB_HOST,
         dbName : process.env.DB_NAME,
-        dbPort : process.env.DB_PORT||3000
+        dbPort : process.env.DB_PORT
     }
 }
 

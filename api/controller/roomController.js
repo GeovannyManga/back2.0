@@ -181,9 +181,9 @@ const sendTicketToMail = async (req, res) => {
       host: "smtp.gmail.com", // servidor SMTP
       port: 587, // puerto del servidor SMTP
       secure: true, // utiliza SSL
-      auth: {
-        user: "miradortayronaproyectohenry@gmail.com", // dirección de correo electrónico del remitente
-        pass: "xewmidrfubohbesq", // contraseña del remitente
+     auth: {
+        user: "tayronahotel78@gmail.com", // dirección de correo electrónico del remitente
+        pass: "fumxvfujvnsovzsj", // contraseña del remitente
       },
    
     });

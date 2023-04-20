@@ -19,9 +19,7 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
- // permite usar las variables de entorno
+   require('dotenv').config() // permite usar las variables de entorno
    server = require('./src/app.js');
    const connectDb = require('./src/db')
    const {appConfig, dbConfig} = require('./config')

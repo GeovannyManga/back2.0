@@ -23,12 +23,13 @@
    server = require('./src/app.js');
    const connectDb = require('./src/db')
    const {appConfig, dbConfig} = require('./config')
+   const port = process.env.PORT || 3000;
    
 
    async function initApp(app_config, db_config){
      try {
       await connectDb(db_config)
-      server.listen(app_config.port, () => console.log(`Server listen on port:  ${app_config.port}`)); // eslint-disable-line no-console
+      server.listen(port, () => console.log(`Server listen on port:  ${app_config.port}`)); // eslint-disable-line no-console
      } catch (e) {
       console.error(e)
       process.exit(0) // si hay un error al pasarle 0 corta el proceso de node

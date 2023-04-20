@@ -179,7 +179,7 @@ const sendTicketToMail = async (req, res) => {
     // Configurar el transporte de nodemailer
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com", // servidor SMTP
-      port: 465, // puerto del servidor SMTP
+      port: 587, // puerto del servidor SMTP
       secure: true, // utiliza SSL
       auth: {
         user: "miradortayronaproyectohenry@gmail.com", // dirección de correo electrónico del remitente

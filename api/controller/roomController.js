@@ -185,7 +185,7 @@ const sendTicketToMail = async (req, res) => {
         user: "miradortayronaproyectohenry@gmail.com", // dirección de correo electrónico del remitente
         pass: "xewmidrfubohbesq", // contraseña del remitente
       },
-       requireTLS: true,
+ 
     });
 
     // Enviar el ticket al email del usuario
